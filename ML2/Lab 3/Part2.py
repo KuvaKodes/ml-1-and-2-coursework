@@ -1,3 +1,11 @@
+# NOTE: This script expects `mnist_train.csv` and `mnist_test.csv` in this
+# folder (standard "MNIST in CSV" format: first column = label, remaining
+# 784 columns = 28x28 pixel values, 0-255). These files are NOT committed to
+# the repo -- the original mnist_train.csv here was a broken/incomplete
+# git-lfs pointer (~134 bytes, not real data) and both CSVs were large
+# (~110MB / ~17MB), so they were removed to keep the repo lean and working.
+# Download "MNIST in CSV" from Kaggle or OpenML and place the two files
+# alongside this script to run it. See also the README in this folder.
 import sys
 import ast
 import numpy as np
